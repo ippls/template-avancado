@@ -1,0 +1,45 @@
+/* ============================================
+   TABELAS
+   ============================================ */
+
+.table-wrapper {
+    overflow-x: auto;
+    border-radius: 0.5rem;
+    border: 2px solid var(--gray-800);
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table thead {
+    background: var(--gray-800);
+}
+
+.data-table th {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    color: var(--ippls-gold);
+}
+
+.data-table td {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--gray-800);
+}
+
+.data-table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.data-table tbody tr:hover {
+    background: var(--gray-800);
+}
+
+.data-table tbody tr:last-child td {
+    border-bottom: none;
+}

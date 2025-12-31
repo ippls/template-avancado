@@ -1,0 +1,107 @@
+    /* ============================================
+    RODAPÉ
+    ============================================ */
+
+.footer {
+    background: var(--gray-900);
+    color: white;
+    margin-top: 0.1rem;
+    padding: 2.5rem 2rem;
+    border-top: 3px solid var(--ippls-gold);
+    z-index: 100;
+}
+
+.footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-logo {
+    height: 60px;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 4px 8px rgba(255, 255, 255, 0.3));
+}
+
+.footer-desc {
+    color: var(--gray-400);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer-heading {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--ippls-gold);
+    margin-bottom: 1rem;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--gray-400);
+}
+
+.footer-links a {
+    color: var(--gray-400);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--ippls-gold);
+}
+
+.footer-bottom {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--gray-700);
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+    color: var(--gray-400);
+}
+
+.footer-bottom strong {
+    color: var(--ippls-gold);
+    font-weight: 600;
+}
+
+.footer-version {
+    font-size: 0.75rem;
+    color: var(--gray-400);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.footer-heart {
+    color: var(--ippls-red);
+    animation: heartbeat 1.5s ease-in-out infinite;
+}

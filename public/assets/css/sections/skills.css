@@ -1,0 +1,102 @@
+/* ============================================
+   SEÇÃO DE HABILIDADES / TECNOLOGIAS
+   ============================================ */
+
+.skills-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 3rem auto;
+    text-align: center;
+    padding: 2rem 1.5rem;
+}
+
+.skills-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--ippls-blue-dark);
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 1.1;
+}
+
+@media (min-width: 768px) {
+    .skills-title {
+        font-size: 2.5rem;
+    }
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 1rem;
+    background: var(--gray-900);
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.skill-card:hover {
+    transform: scale(1.05) translateY(-5px);
+    background: var(--gray-800);
+    border-color: var(--ippls-gold);
+    box-shadow: 0 15px 35px rgba(244, 180, 26, 0.3);
+}
+
+.skill-icon {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 0.75rem;
+    transition: transform 0.3s ease;
+}
+
+@media (min-width: 768px) {
+    .skill-icon {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
+
+.skill-card:hover .skill-icon {
+    transform: rotateY(360deg);
+}
+
+.skill-name {
+    color: #d1d5db;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+@media (min-width: 768px) {
+    .skill-name {
+        font-size: 0.95rem;
+    }
+}
+
+.skill-card:hover .skill-name {
+    color: var(--ippls-gold);
+}

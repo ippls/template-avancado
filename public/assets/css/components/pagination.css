@@ -1,0 +1,29 @@
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: var(--gray-800);
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+.pagination-link {
+    padding: 0.5rem 1rem;
+    background: var(--ippls-gold);
+    color: var(--ippls-blue-dark);
+    text-decoration: none;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.pagination-link:hover {
+    background: var(--ippls-gold-dark);
+    transform: translateY(-2px);
+}
+
+.pagination-info {
+    color: var(--gray-400);
+    font-size: 0.875rem;
+}

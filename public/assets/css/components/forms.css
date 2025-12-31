@@ -1,0 +1,84 @@
+/* ============================================
+   FORMULÁRIOS - COMPONENTES
+   ============================================ */
+
+/* Grid de Formulário */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Grupo de Campo */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Label */
+.form-label {
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--gray-400);
+}
+
+/* Input */
+.form-input {
+    padding: 0.875rem 1rem;
+    border: 2px solid var(--gray-700);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: all var(--transition-base);
+    background: var(--gray-800);
+    color: white;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--ippls-gold);
+    background: var(--gray-700);
+    box-shadow: 0 0 0 3px rgba(244, 180, 26, 0.1);
+}
+
+.form-input::placeholder {
+    color: var(--gray-400);
+}
+
+/* Input Error State */
+.form-input.error {
+    border-color: var(--ippls-red);
+}
+
+.form-input.error:focus {
+    border-color: var(--ippls-red);
+    box-shadow: 0 0 0 3px rgba(193, 39, 45, 0.1);
+}
+
+/* Input Success State */
+.form-input.success {
+    border-color: #28a745;
+}
+
+/* Mensagem de Erro */
+.form-error {
+    font-size: 0.75rem;
+    color: var(--ippls-red);
+    margin-top: 0.25rem;
+}
+
+/* Mensagem de Ajuda */
+.form-help {
+    font-size: 0.75rem;
+    color: var(--gray-400);
+    margin-top: 0.25rem;
+}

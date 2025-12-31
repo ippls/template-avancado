@@ -1,0 +1,22 @@
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 0;
+    font-size: 0.875rem;
+    color: var(--docs-text-secondary);
+}
+
+.breadcrumbs a {
+    color: var(--docs-text-secondary);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.breadcrumbs a:hover {
+    color: var(--docs-primary);
+}
+
+.breadcrumbs i {
+    font-size: 0.75rem;
+}

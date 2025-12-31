@@ -1,0 +1,64 @@
+/* ============================================
+   CARDS
+   ============================================ */
+
+.card {
+    background: var(--gray-900);
+    color: white;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    margin-bottom: 2rem;
+    border-bottom: 4px solid #050f1f;
+    border-right: 6px solid #050f1f;
+}
+
+.card-header {
+    background: var(--gray-800);
+    padding: 1.5rem 2rem;
+    border-bottom: 3px solid var(--ippls-gold);
+}
+
+.card-header h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.card-body {
+    padding: 2rem;
+    background: var(--gray-900);
+}
+
+@media (max-width: 768px) {
+    .card-body {
+        padding: 1.5rem;
+    }
+}
+
+/* Estado Vazio */
+.empty-state {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: var(--gray-400);
+}
+
+.empty-state-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.empty-state h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.empty-state p {
+    color: var(--gray-400);
+    font-size: 1rem;
+}

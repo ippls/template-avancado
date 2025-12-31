@@ -1,0 +1,211 @@
+/* ============================================
+   BOTÕES - COMPONENTES
+   ============================================ */
+
+/* Grupo de Botões */
+.button-group {
+    display: flex;
+    gap: 1rem;
+    padding-top: 1rem;
+    flex-wrap: wrap;
+}
+
+/* Botão Base */
+.btn {
+    padding: 0.875rem 2rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: all var(--transition-base);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+/* Botão Primário */
+.btn-primary {
+    background: var(--ippls-gold);
+    color: var(--ippls-blue-dark);
+    border-bottom: 3px solid var(--ippls-gold-dark);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(244, 180, 26, 0.4);
+}
+
+/* Botão Secundário */
+.btn-secondary {
+    background: transparent;
+    color: var(--gray-400);
+    border: 2px solid var(--gray-700);
+}
+
+.btn-secondary:hover {
+    background: var(--gray-800);
+    border-color: var(--gray-400);
+    color: white;
+}
+
+/* Botão Pequeno */
+.btn-sm {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+    border-radius: 0.25rem;
+}
+
+/* Botão Editar */
+.btn-edit {
+    background: var(--ippls-gold);
+    color: var(--ippls-blue-dark);
+    border: none;
+}
+
+.btn-edit:hover {
+    background: var(--ippls-gold-dark);
+    transform: translateY(-1px);
+}
+
+/* Botão Deletar */
+.btn-delete {
+    background: var(--ippls-red);
+    color: white;
+    border: none;
+}
+
+.btn-delete:hover {
+    background: #9d1f23;
+    transform: translateY(-1px);
+}
+
+/* Botões Hero */
+.btn-hero {
+    border-radius: 0.25rem;
+    padding: 0.875rem 2rem;
+    flex-grow: 1;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 0.1em;
+    transition: all var(--transition-base);
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-hero-primary {
+    background: var(--ippls-gold);
+    color: var(--ippls-blue-dark);
+}
+
+.btn-hero-primary:hover {
+    background: var(--ippls-gold-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(244, 180, 26, 0.3);
+}
+
+.btn-hero-secondary {
+    border: 2px solid var(--ippls-gold);
+    color: var(--ippls-gold);
+    background: transparent;
+}
+
+.btn-hero-secondary:hover {
+    background: var(--ippls-gold);
+    color: var(--ippls-blue-dark);
+}
+
+/* Botões de Ação */
+.action-buttons {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+/* ============================================
+   BOTÃO BACK TO TOP
+   ============================================ */
+
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 50px;
+    height: 50px;
+    background: var(--ippls-gold);
+    color: var(--ippls-blue-dark);
+    border: none;
+    border-radius: 50%;
+    border-bottom: 3px solid var(--ippls-gold-dark);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100px);
+    transition: all var(--transition-base);
+    box-shadow: var(--shadow-lg);
+    z-index: 999;
+}
+
+.back-to-top:hover {
+    background: var(--ippls-gold-dark);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(244, 180, 26, 0.5);
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top i {
+    animation: bounceUp 2s ease-in-out infinite;
+}
+
+@keyframes bounceUp {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .button-group {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    .btn-sm {
+        width: 100%;
+    }
+
+    .back-to-top {
+        bottom: 1.5rem;
+        right: 1.5rem;
+        width: 45px;
+        height: 45px;
+        font-size: 1.125rem;
+    }
+}
