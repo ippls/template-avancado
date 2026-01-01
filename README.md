@@ -48,8 +48,8 @@ composer install
 2. **Criar banco de dados e tabelas:**
 
 ```sql
-CREATE DATABASE projeto_avancado;
-USE projeto_avancado;
+CREATE DATABASE template_avancado;
+USE template_avancado;
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
@@ -66,7 +66,6 @@ CREATE TABLE products (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 ```
-
 
 ## 🌱 Seeds (— facilita o início do desenvolvimento)
 
@@ -86,7 +85,6 @@ Observações:
 
 Se preferir popular via SQL manual, siga a seção "Inserir dados de testes (seguro)" abaixo.
 
-
 2.1 **Inserir dados de testes (seguro)**:
 
 As senhas devem ser armazenadas com `password_hash()` — não use funções MD5/SHA simples.
@@ -94,7 +92,7 @@ As senhas devem ser armazenadas com `password_hash()` — não use funções MD5
 Opção A — SQL com senhas já geradas (substitua {HASH} pelos valores gerados em PHP):
 
 ```sql
-USE projeto_avancado;
+USE template_avancado;
 INSERT INTO users (name, email, password) VALUES
 ('Pai Grande Ngola', 'paigrandengola@gmail.com', '{HASH_FOR_password1}'),
 ('Kelson Filipe Dev', 'kelsonfilipedev@gmail.com', '{HASH_FOR_password2}');
@@ -116,15 +114,16 @@ INSERT INTO products (name, description, price) VALUES
 ('Teclado Mecânico', 'Teclado para programadores', 8500.00);
 ```
 
-
-## ⚡ Uso rápido 
+## ⚡ Uso rápido
 
 - Copiar `.env.example` para `.env` e ajustar se necessário:
 
 ```powershell
 copy .\.env.example .env
 ```
+
 # ou executar direitamente o script
+
 ```powershell
 php scripts/env-setup.php
 ```
@@ -134,7 +133,9 @@ php scripts/env-setup.php
 ```powershell
 composer run seed
 ```
+
 # ou executar direitamente o script
+
 ```powershell
 php scripts/seed.php
 ```
@@ -165,13 +166,12 @@ Esses comandos são suficientes para deixar o ambiente pronto para explorar o te
 - Introduzir validação centralizada (ex.: usar Respect/Validation ou criar helpers) para evitar duplicação.
 - Configurar CI simples (GitHub Actions) que rode um conjunto mínimo de verificações (lint, composer install).
 
-
 3. **Configurar banco:**
 
 ```php
 // app/config/database.php
 DB_HOST = 'localhost';
-DB_NAME = 'projeto_avancado';
+DB_NAME = 'template_avancado';
 DB_USER = 'root';
 DB_PASS = '';
 ```
@@ -179,7 +179,7 @@ DB_PASS = '';
 4. **Acessar:**
 
 ```bash
-http://localhost/projeto_avancado
+http://localhost/template_avancado
 ```
 
 ## 📚 URLs Disponíveis

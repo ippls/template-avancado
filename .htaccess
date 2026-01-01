@@ -5,7 +5,7 @@
     RewriteEngine On
 
     # Definir base path (ajuste se necessário)
-    RewriteBase /projeto_avancado/
+    RewriteBase /template_avancado/
 
     # Redirecionar www para não-www (opcional)
     # RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]

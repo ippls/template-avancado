@@ -13,7 +13,7 @@ class Database
     private function __construct()
     {
         $host = getenv('DB_HOST') ?: 'localhost';
-        $name = getenv('DB_NAME') ?: 'projeto_avancado';
+        $name = getenv('DB_NAME') ?: 'template_avancado';
         $user = getenv('DB_USER') ?: 'root';
         $pass = getenv('DB_PASS') ?: '';
         $charset = 'utf8mb4';
