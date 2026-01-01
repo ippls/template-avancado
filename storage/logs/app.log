@@ -1834,3 +1834,6 @@ Stack trace:
 [01-Jan-2026 13:14:04 Africa/Luanda] Erro de conexão com banco: SQLSTATE[HY000] [1049] Unknown database 'template_avancado'
 [01-Jan-2026 13:14:14 Africa/Luanda] Erro de conexão com banco: SQLSTATE[HY000] [1049] Unknown database 'template_avancado'
 [01-Jan-2026 13:14:21 Africa/Luanda] Erro de conexão com banco: SQLSTATE[HY000] [1049] Unknown database 'template_avancado'
+[01-Jan-2026 13:29:50 Africa/Luanda] PHP Warning:  Undefined array key "email" in C:\xampp\htdocs\template_avancado\views\pages\products.php on line 63
+[01-Jan-2026 13:29:50 Africa/Luanda] PHP Warning:  Undefined array key "email" in C:\xampp\htdocs\template_avancado\views\pages\products.php on line 63
+[01-Jan-2026 13:29:50 Africa/Luanda] PHP Warning:  Undefined array key "email" in C:\xampp\htdocs\template_avancado\views\pages\products.php on line 63

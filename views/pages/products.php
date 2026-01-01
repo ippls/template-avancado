@@ -44,7 +44,56 @@
             <h2>Produtos Cadastrados</h2>
         </div>
         <div class="card-body">
-            <p>Implementar listagem de produtos...</p>
+            <?php if (!empty($products)): ?>
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nome</th>
+                                <th>Preço</th>
+                                <th>Descrição</th>
+                                <th>Imagem</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php foreach ($products as $product): ?>
+                                <tr>
+                                    <td><strong>#<?= $product['id'] ?></strong></td>
+                                    <td><?= e($product['name']) ?></td>
+                                    <td><?= e($product['price']) ?></td>
+                                    <td><?= e($product['description']) ?></td>
+                                    <td><img src="<?= e($product['image']) ?>" alt="<?= e($product['name']) ?>" srcset=""></td>
+                                    <td>
+                                        <div class="action-buttons">
+                                            <a href="<?= url("/products/edit/{$product['id']}") ?>" class="btn btn-sm btn-edit">
+                                                <i class="fas fa-edit"></i> Editar
+                                            </a>
+                                            <form method="POST" action="<?= url('/products/delete') ?>" class="inline-form"
+                                                  onsubmit="return confirm('Tem certeza?');">
+                                                <?= csrfField() ?>
+                                                <input type="hidden" name="id" value="<?= $product['id'] ?>">
+                                                <button type="submit" class="btn btn-sm btn-delete">
+                                                    <i class="fas fa-trash"></i> Deletar
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>
+                            <?php endforeach; ?>
+                        </tbody>
+                    </table>
+                </div>
+
+                <?php require COMPONENTS_PATH . '/pagination.php'; ?>
+            <?php else: ?>
+                <div class="empty-state">
+                    <i class="fas fa-inbox fa-4x"></i>
+                    <h3>Nenhum Produto</h3>
+                    <p>Crie o primeiro Produto usando o formulário acima.</p>
+                </div>
+            <?php endif; ?>
         </div>
     </div>
 </div>

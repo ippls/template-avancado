@@ -52,13 +52,13 @@ class Product
     public function create(array $data): bool
     {
         $stmt = $this->db->prepare(
-            "INSERT INTO products (name, description, price, image, created_at)
+            "INSERT INTO products (name, price, description, image, created_at)
              VALUES (?, ?, ?, ?, NOW())"
         );
         return $stmt->execute([
             $data['name'],
-            $data['description'] ?? null,
             $data['price'],
+            $data['description'] ?? null,
             $data['image'] ?? null
         ]);
     }
