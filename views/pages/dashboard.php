@@ -16,21 +16,21 @@
             <div class="stat-icon"><i class="fas fa-users"></i></div>
             <div class="stat-info">
                 <h3>Usuários</h3>
-                <p class="stat-number">150</p>
+                <p class="stat-number"><?= $totalUsers; ?></p>
             </div>
         </div>
         <div class="stat-card">
             <div class="stat-icon"><i class="fas fa-box"></i></div>
             <div class="stat-info">
                 <h3>Produtos</h3>
-                <p class="stat-number">42</p>
+                <p class="stat-number"><?= $totalProducts; ?></p>
             </div>
         </div>
         <div class="stat-card">
-            <div class="stat-icon"><i class="fas fa-shopping-cart"></i></div>
+            <div class="stat-icon"><i class="fas fa-tools"></i></div>
             <div class="stat-info">
-                <h3>Pedidos</h3>
-                <p class="stat-number">28</p>
+                <h3>Template</h3>
+                <p class="stat-number">Avançado</p>
             </div>
         </div>
     </div>
