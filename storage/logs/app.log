@@ -1837,3 +1837,21 @@ Stack trace:
 [01-Jan-2026 13:29:50 Africa/Luanda] PHP Warning:  Undefined array key "email" in C:\xampp\htdocs\template_avancado\views\pages\products.php on line 63
 [01-Jan-2026 13:29:50 Africa/Luanda] PHP Warning:  Undefined array key "email" in C:\xampp\htdocs\template_avancado\views\pages\products.php on line 63
 [01-Jan-2026 13:29:50 Africa/Luanda] PHP Warning:  Undefined array key "email" in C:\xampp\htdocs\template_avancado\views\pages\products.php on line 63
+[01-Jan-2026 14:44:11 Africa/Luanda] PHP Fatal error:  Uncaught TypeError: asset(): Argument #1 ($path) must be of type string, null given, called in C:\xampp\htdocs\template_avancado\views\pages\products.php on line 72 and defined in C:\xampp\htdocs\template_avancado\app\config\helpers.php:123
+Stack trace:
+#0 C:\xampp\htdocs\template_avancado\views\pages\products.php(72): asset(NULL)
+#1 C:\xampp\htdocs\template_avancado\views\layouts\main.php(19): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\template_avancado\app\Http\Controllers\ProductController.php(25): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\template_avancado\routes\web.php(126): App\Http\Controllers\ProductController->index()
+#4 C:\xampp\htdocs\template_avancado\index.php(91): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\template_avancado\app\config\helpers.php on line 123
+[01-Jan-2026 14:44:21 Africa/Luanda] PHP Fatal error:  Uncaught TypeError: asset(): Argument #1 ($path) must be of type string, null given, called in C:\xampp\htdocs\template_avancado\views\pages\products.php on line 72 and defined in C:\xampp\htdocs\template_avancado\app\config\helpers.php:123
+Stack trace:
+#0 C:\xampp\htdocs\template_avancado\views\pages\products.php(72): asset(NULL)
+#1 C:\xampp\htdocs\template_avancado\views\layouts\main.php(19): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\template_avancado\app\Http\Controllers\ProductController.php(25): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\template_avancado\routes\web.php(126): App\Http\Controllers\ProductController->index()
+#4 C:\xampp\htdocs\template_avancado\index.php(91): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\template_avancado\app\config\helpers.php on line 123

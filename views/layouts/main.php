@@ -28,5 +28,7 @@
 
     <!-- Script Principal -->
     <script src="<?= asset('js/main.js') ?>"></script>
+    <!-- Script do upload das imagens -->
+    <script src="<?= asset('js/components/upload.js') ?>"></script>
 </body>
 </html>

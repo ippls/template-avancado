@@ -30,6 +30,11 @@
                         <label for="image">Imagem</label>
                         <input type="file" id="image" name="image" class="form-input" accept="image/*">
                     </div>
+                    <div class="form-group">
+                        <div id="container-preview">
+                            <!-- O element img com src será criado automáticamente aqui pelo js quando selecionado a imagem -->
+                        </div>
+                    </div>
                 </div>
 
                 <button type="submit" class="btn btn-primary">
@@ -64,7 +69,7 @@
                                     <td><?= e($product['name']) ?></td>
                                     <td><?= e($product['price']) ?></td>
                                     <td><?= e($product['description']) ?></td>
-                                    <td><img src="<?= e($product['image']) ?>" alt="<?= e($product['name']) ?>" srcset=""></td>
+                                    <td class="container-image"><img src="public/<?= e($product['image']) ?>" alt="<?= e($product['image']) ?>" class="product-image"></td>
                                     <td>
                                         <div class="action-buttons">
                                             <a href="<?= url("/products/edit/{$product['id']}") ?>" class="btn btn-sm btn-edit">

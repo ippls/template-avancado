@@ -31,15 +31,18 @@ class ProductController
         $description = clean($_POST['description'] ?? '');
         $price = (float)($_POST['price'] ?? 0);
 
-        if (!validateRequired($name) || $price <= 0) {
+        if (!validateRequired($name) || !validateRequired($description) || $price <= 0) {
             flash('error', 'Preencha todos os campos obrigatórios.');
             redirect('/products');
         }
 
-        // Upload de imagem (se houver)
+        // Upload de imagem (obrigatório)
         $image = null;
         if (isset($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
             $image = uploadFile($_FILES['image'], 'uploads/products');
+        }else {
+            flash('warning', 'Para cadastrar um produto, selecione uma imagem!');
+            redirect('/products');
         }
 
         if ($this->productModel->create([

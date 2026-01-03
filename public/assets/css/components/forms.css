@@ -82,3 +82,11 @@
     color: var(--gray-400);
     margin-top: 0.25rem;
 }
+
+/* Visualização da imagem do produto */
+
+.image-preview.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}

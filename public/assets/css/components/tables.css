@@ -43,3 +43,13 @@
 .data-table tbody tr:last-child td {
     border-bottom: none;
 }
+
+/* Imagem do produto */
+.container-image{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.product-image {
+    height: 5rem;
+}
