@@ -12,7 +12,7 @@
             <ul class="footer-links">
                 <li><a href="<?= url('/') ?>"><i class="fas fa-home"></i> Começar</a></li>
                 <li><a href="<?= url('/docs') ?>"><i class="fas fa-book"></i> Documentação</a></li>
-                <li><a href="?page=users"><i class="fas fa-users"></i> Usuários</a></li>
+                <li><a href="<?= url('/users') ?>"><i class="fas fa-users"></i> Usuários</a></li>
             </ul>
         </div>
 

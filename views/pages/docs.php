@@ -346,7 +346,7 @@ function replaceEmojisWithFA(string $html): string {
 
         <!-- Breadcrumb -->
         <nav class="docs-breadcrumb">
-            <a href="?page=home"><i class="fas fa-home"></i> Início</a>
+            <a href="<?= url('/') ?>"><i class="fas fa-home"></i> Início</a>
             <i class="fas fa-chevron-right"></i>
             <span>Documentação</span>
         </nav>
