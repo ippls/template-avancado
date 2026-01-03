@@ -120,7 +120,7 @@ style="
       <a href="<?= url('/') ?>"><img src="
           <?= asset('images/logo/ippls-logo-removebg-preview.png') ?>" alt="IPPLS" class="logo-img">
       </a>
-        <h2 class="overlay-title">Comece sua Jornada - IPPLS</h2>
+        <h2 class="overlay-title">Comece sua Jornada.</h2>
         <p class="overlay-text">
           Crie sua conta e comece a desenvolver aplicações web profissionais com a melhor arquitetura MVC pensada para estudantes e desenvolvedores!
         </p>

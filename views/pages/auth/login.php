@@ -83,7 +83,7 @@
         <a href="<?= url('/') ?>"><img src="
             <?= asset('images/logo/ippls-logo-removebg-preview.png') ?>" alt="IPPLS" class="logo-img">
         </a>
-        <h2 class="overlay-title">Bem-vindo de volta - IPPLS</h2>
+        <h2 class="overlay-title">Bem-vindo de volta!</h2>
         <p class="overlay-text">
           Acesse sua conta e continue desenvolvendo projetos 
           profissionais com a arquitetura MVC mais completa do mercado do desenvolvimento.
