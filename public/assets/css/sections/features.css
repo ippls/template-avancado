@@ -1,5 +1,5 @@
 /* ============================================
-   SEÇÃO DE HABILIDADES / TECNOLOGIAS
+   SEÇÃO DE RECURSOS - AVANÇADO
    ============================================ */
 
 .features-section {
@@ -58,6 +58,10 @@
     border: 2px solid transparent;
 }
 
+.feature-card a {
+    text-decoration: none;
+}
+
 .feature-card:hover {
     transform: scale(1.05) translateY(-5px);
     background: var(--gray-800);
@@ -73,12 +77,6 @@
     transition: transform 0.3s ease;
     line-height: 1;
 }
-
-/* @media (min-width: 768px) {
-    .feature-icon {
-        font-size: 3.5rem;
-    }
-} */
 
 @media (min-width: 768px) {
     .feature-icon {
@@ -124,5 +122,6 @@
 }
 
 .feature-card {
+    transform: scale(1);
     will-change: transform;
 }
