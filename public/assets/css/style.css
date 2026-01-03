@@ -10,6 +10,7 @@
 @import 'components/breadcrumbs.css';
 @import 'components/errors.css';
 @import 'sections/hero.css';
+@import 'sections/crud.css';
 @import 'sections/footer.css';
 @import 'sections/skills.css';
 @import 'sections/features.css';

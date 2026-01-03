@@ -1,10 +1,6 @@
 <div class="main-container">
     <?php require COMPONENTS_PATH . '/breadcrumbs.php'; ?>
 
-    <h1 class="hero-title">
-        CRUD - <span class="hero-title-highlight">CREATE</span> READ <span class="hero-title-highlight">UPDATE</span> DELETE
-    </h1><br>
-
     <div class="page-header">
         <h1><i class="fas fa-users"></i> Gestão de Usuários</h1>
     </div>

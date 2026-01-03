@@ -36,6 +36,12 @@
         </div>
     </div>
 </section>
+    <!-- <h1 class="hero-title">
+        CRUD - <span class="hero-title-highlight">CREATE</span> READ <span class="hero-title-highlight">UPDATE</span> DELETE
+    </h1><br> -->
+
+<!--Secção do CRUD -->
+<?php require_once VIEWS_PATH . '/components/sections/crud.php'; ?>
 
 <!--Recursos Avançados -->
 <?php require_once VIEWS_PATH . '/components/sections/features.php'; ?>
