@@ -138,12 +138,20 @@ body {
 }
 
 @keyframes wave {
-    0%, 100% { transform: rotate(0deg); }
-    25% { transform: rotate(20deg); }
-    75% { transform: rotate(-20deg); }
+    0% { transform: rotate(0deg); }
+    15% { transform: rotate(14deg); }
+    30% { transform: rotate(-8deg); }
+    45% { transform: rotate(14deg); }
+    60% { transform: rotate(-4deg); }
+    100% { transform: rotate(0deg); }
 }
 
 @keyframes heartbeat {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.2); }
 }
+
+/* Nota: preferências de movimento devem ser tratadas de forma seletiva.
+   Removida regra global que desativava todas as animações para evitar
+   desabilitar animações inadvertidamente em ambientes de desenvolvimento.
+   Podemos reintroduzir uma versão mais seletiva se necessário. */
