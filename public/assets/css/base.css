@@ -151,26 +151,4 @@ body {
     50% { transform: scale(1.2); }
 }
 
-/* Nota: preferências de movimento devem ser tratadas de forma seletiva.
-   Removida regra global que desativava todas as animações para evitar
-   desabilitar animações inadvertidamente em ambientes de desenvolvimento.
-   Abaixo: versão seletiva que desativa apenas animações em componentes
-   potencialmente desencadeadores de desconforto. Isso será aplicada
-   automaticamente quando o SO/browser reportar `prefers-reduced-motion: reduce`.
-*/
-
-/* Bloco seletivo para prefers-reduced-motion */
-@media (prefers-reduced-motion: reduce) {
-    .hero-visual,
-    .crud-section,
-    .back-to-top i,
-    .footer-heart,
-    .feature-card,
-    .btn i,
-    .alert,
-    .carousel,
-    .heavy-anim {
-        animation: none !important;
-        transition: none !important;
-    }
-}
+/* prefers-reduced-motion: regras foram removidas por padrão. */
