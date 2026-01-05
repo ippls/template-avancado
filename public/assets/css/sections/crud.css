@@ -17,6 +17,9 @@
     position: relative;
     border-top: .2rem solid var(--ippls-gold-dark);
     border-bottom: .2rem solid var(--gray-50);
+    /* variável para controlar a cor do destaque durante a animação */
+    --crud-highlight-color: var(--ippls-gold);
+    transition: background .45s ease, border-color .45s ease;
     animation-name: CRUD;
     animation-duration: 5s;
     animation-timing-function: ease-in-out;
@@ -103,8 +106,9 @@
 }
 
 .crud-title-highlight {
-    color: var(--ippls-gold);
-  }
+    color: var(--crud-highlight-color, var(--ippls-gold));
+    transition: color .35s ease;
+}
 
 .crud-subtitle {
     margin-top: 1rem;
@@ -417,17 +421,21 @@
         background: var(--gray-900);
         border-top: .2rem solid var(--ippls-gold-dark);
         border-bottom: .2rem solid var(--gray-50);
+        --crud-highlight-color: var(--ippls-gold);
     }
     25% { 
         background: var(--ippls-gold-dark);
         border-top: .2rem solid var(--gray-50);
         border-bottom: .2rem solid var(--gray-900);        
+        /* uso de cor contrastante quando o fundo fica dourado-escuro */
+        --crud-highlight-color: var(--gray-900);
     }
     75% { 
         background: var(--gray-800);
         border-top: .2rem solid var(--gray-50);
         border-bottom: .2rem solid var(--ippls-gold);
         box-shadow: var(--shadow-2xl);            
+        --crud-highlight-color: var(--ippls-gold);
     }
 }
 

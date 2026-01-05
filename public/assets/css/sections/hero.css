@@ -137,6 +137,9 @@
 
 .welcome-icon {
     font-size: 1.5rem;
+    display: inline-block;
+    transform-origin: 70% 70%;
+    will-change: transform;
     animation: wave 2s ease-in-out infinite;
 }
 
@@ -419,4 +422,14 @@
     .feature-card-subtitle {
         font-size: 1rem;
     }
+}
+
+/* Animação de aceno para ícone de boas-vindas */
+@keyframes wave {
+    0% { transform: rotate(0deg); }
+    15% { transform: rotate(14deg); }
+    30% { transform: rotate(-8deg); }
+    45% { transform: rotate(14deg); }
+    60% { transform: rotate(-4deg); }
+    100% { transform: rotate(0deg); }
 }
