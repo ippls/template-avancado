@@ -1,2 +1,111 @@
-.aider*
-.env
+# ============================================
+# .gitignore - Template Padrão IPPLS
+# ============================================
+
+# ============================================
+# CONFIGURAÇÕES SENSÍVEIS
+# ============================================
+.env                  # ⚠️ NUNCA commitar credenciais de BD!
+*.local.php
+
+# ============================================
+# NODE.JS
+# ============================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+.npm
+.yarn-integrity
+
+# ============================================
+# PHP (Composer)
+# ============================================
+vendor/
+composer.lock
+*.cache
+*.log
+
+# ============================================
+# IDES E EDITORES
+# ============================================
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# PhpStorm / IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# NetBeans
+nbproject/
+
+# ============================================
+# SISTEMAS OPERACIONAIS
+# ============================================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ============================================
+# ARQUIVOS TEMPORÁRIOS
+# ============================================
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.#*
+
+# ============================================
+# LOGS E CACHES
+# ============================================
+logs/
+*.log
+cache/
+tmp/
+temp/
+
+# ============================================
+# UPLOADS (comentar se precisar versionar)
+# ============================================
+uploads/*
+!uploads/.gitkeep
+
+# ============================================
+# BACKUPS
+# ============================================
+*.bak
+*.backup
+*.old
+*.orig
+
+# ============================================
+# OUTROS
+# ============================================
+error_log
+.htaccess.bak
