@@ -1,0 +1,16 @@
+{
+  "name": "ippls/template-avancado",
+  "version": "1.0.0",
+  "description": "Template Avançado MVC Profissiona com Composer Autoload Psr-4 e Hot Reload- IPPLS",
+  "private": true,
+  "scripts": {
+    "serve": "php -S localhost:8000 -t public",
+    "watch": "browser-sync start --proxy localhost:8000 --files \"app/**/*.php, routes/**/*.php, resources/views/**/*.php, public/assets/css/**/*.css, public/assets/js/**/*.js\" --no-notify --port 3000 --no-open",
+    "dev": "concurrently \"npm run serve\" \"npm run watch\"",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "concurrently": "^8.2.2"
+  }
+}

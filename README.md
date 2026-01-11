@@ -48,6 +48,7 @@ composer install
 2. **Criar banco de dados e tabelas:**
 
 ```sql
+-- Template Avançado
 CREATE DATABASE template_avancado;
 USE template_avancado;
 CREATE TABLE users (
